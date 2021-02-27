@@ -4,7 +4,7 @@ var contain = document.getElementById("container");
 var n = 16;
 
 //create n*n divs 
-for(var i=0; i<n*n; i++){
+for(let i=0; i<n*n; i++){
     var grid = document.createElement("div");
     grid.className = "element";
     grid.style.paddingTop = "90%";
@@ -15,19 +15,17 @@ for(var i=0; i<n*n; i++){
 //create n columns in the grid.
 contain.style.gridTemplateColumns = `repeat(${n},auto)`;
 
-// var gridChange = document.getElementsByClassName("element");
+//storing all the grids in an array class
+var gridChange = document.getElementsByClassName("element");
 
-// console.log(gridChange);
+//iterating through the array for mouseover event and 
+//changing the colour of each when the mouse hovers over it.
+for (let i = 0; i < gridChange.length; i++){
+    gridChange[i].addEventListener("mouseover", function(){
+        this.classList.add("hover");
+    });
+}
 
-document.getElementById("container").addEventListener = ("click", function(){
-    console.log("heyy");
-    console.log(this);
-    this.classList.add("hover");
-});
-
-// $(".element").on('mouseover', function () {
-//     $(this).addClass("hover");
-// });
 
 
 
