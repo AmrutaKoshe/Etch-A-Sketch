@@ -6,8 +6,8 @@ var n = 16;
 //create n*n divs 
 for(var i=0; i<n*n; i++){
     var grid = document.createElement("div");
+    grid.className = "element";
     grid.style.paddingTop = "90%";
-    grid.style.backgroundColor = "white";
     grid.style.border ="black 1px solid";
     contain.appendChild(grid);
 }
