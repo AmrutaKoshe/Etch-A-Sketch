@@ -14,3 +14,20 @@ for(var i=0; i<n*n; i++){
 
 //create n columns in the grid.
 contain.style.gridTemplateColumns = `repeat(${n},auto)`;
+
+// var gridChange = document.getElementsByClassName("element");
+
+// console.log(gridChange);
+
+document.getElementById("container").addEventListener = ("click", function(){
+    console.log("heyy");
+    console.log(this);
+    this.classList.add("hover");
+});
+
+// $(".element").on('mouseover', function () {
+//     $(this).addClass("hover");
+// });
+
+
+
