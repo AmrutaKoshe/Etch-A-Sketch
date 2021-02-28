@@ -1,13 +1,17 @@
 var contain = document.getElementById("container");
 
 //variable to denote number of rows or columns in the grid
-var n = 16;
+var n = 26;
 
 //create n*n divs 
 for(let i=0; i<n*n; i++){
     var grid = document.createElement("div");
     grid.className = "element";
-    grid.style.paddingTop = "90%";
+
+    //size of the grid 
+    var size = 94 - Math.ceil(n/1.9);
+    grid.style.paddingTop = `${size}%`;
+
     grid.style.border ="black 1px solid";
     contain.appendChild(grid);
 }
