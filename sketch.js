@@ -26,6 +26,11 @@ for (let i = 0; i < gridChange.length; i++){
     });
 }
 
+document.getElementById("reset").addEventListener("click",function(){
+    for (let i = 0; i < gridChange.length; i++)
+        gridChange[i].classList.remove("hover");
+})
+
 
 
 
