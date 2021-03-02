@@ -2,8 +2,30 @@
     width: 30%;
     display: grid;
     margin: auto;
-    margin-top: 8%;
+    margin-top: 3%;
     border: black 2px solid;
+}
+
+#slideContainer{
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: -1%;
+}
+
+span{
+    margin-right: 1%;
+    font-size: 23px;
+}
+
+#myRange{
+    width: 25%;
+    -webkit-appearance: none;
+    height: 15px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
 }
 
 .hover{
