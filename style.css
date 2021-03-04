@@ -12,15 +12,15 @@
     margin-bottom: -1%;
 }
 
-span{
-    margin-right: 1%;
-    font-size: 23px;
+label{
+    margin-right: 0.5%;
+    font-size: 20px;
 }
 
 #myRange{
-    width: 25%;
+    width: 19%;
     -webkit-appearance: none;
-    height: 15px;
+    height: 12px;
     background: #d3d3d3;
     outline: none;
     opacity: 0.7;
@@ -28,11 +28,14 @@ span{
     transition: opacity .2s;
 }
 
-.hover{
-    background-color: brown;
+#buttons{
+    display: inline-block;
+    text-align: center;
+    margin-left: 1%;
+    margin-top: -1%;
 }
 
-#buttons{
-    text-align: center;
+#colours{
     margin-top: 2%;
+    text-align: center;
 }

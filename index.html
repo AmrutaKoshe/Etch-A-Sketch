@@ -10,19 +10,23 @@
     <body>
 
         <div id="slideContainer">
-            <span>Size  </span> 
+            <label for="myRange">Size: </label>
             <input type="range" min="1" max="64" value="20" id="myRange">
             
-            
+            <div id="buttons">
+            <button id="reset" type="button">RESET</button>
+            </div>
+
         </div>
 
         <div id="container">
         </div>
 
-
-        <div id="buttons">
-        <button id="reset" type="button">RESET</button>
+        <div id="colours">
+            <label for="colourpicker">Colour:</label>
+            <input type="color" id="colourpicker" value="#940909">
         </div>
+
 
         <script src="sketch.js"></script>
     </body>
